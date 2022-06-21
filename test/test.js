@@ -69,23 +69,22 @@ const { expect } = require("chai");
 // assert.lengthOf(foo, 3, 'foo`s value has a length of 3');
 // assert.lengthOf(beverages.tea, 3, 'beverages has 3 types of tea');
 
-const assert = require ("chai").expect;
-const sayHello = require('../index.js').sayHello;
-const Add = require('../index.js').Add;
+// const expect = require ("chai").expect;
+// const math = require('../index.js')
 
-describe("app",function (){
-  it.skip('should say hello',function (){
-    expect(sayHello()).to.be.a('string');
-  })
-  it('should add two numbers',function (){
-    expect(Add(5,5)).to.be.equal(10)
-  })
-  it('should add two numbers',function (){
-    expect(Add(5,5)).to.be.a('number')
-  })
+// describe("app",function (){
+//   it.skip('should say hello',function (){
+//     expect(sayHello()).to.be.a('string');
+//   })
+//   it('should add two numbers',function (){
+//     expect(Add(5,5)).to.be.equal(10)
+//   })
+//   it('should add two numbers',function (){
+//     expect(Add(5,5)).to.be.a('number')
+//   })
   
 
-})
+// })
 
 // expect(function () { try {
   
@@ -98,20 +97,20 @@ describe("app",function (){
 // expect({b: {b: ['x', 'y'],b: ['x', 'y'],d: ['r', 's']},a: {b: ['x', 'y','z'],d: ['r', 's']}}).to.have.nested.property('a.b[2]')
 
 
-describe('random test', function(){
-  it("reandon test",function(){
-    expect([1, 2, 3]).to.have.ordered.members([ 1,2,3])
-    .but.not.have.ordered.members([2, 1]);
+// describe('random test', function(){
+//   it("reandon test",function(){
+//     expect([1, 2, 3]).to.have.ordered.members([ 1,2,3])
+//     .but.not.have.ordered.members([2, 1]);
   
-    expect('nooo why fail??').to.be.a('string', 'nooo why fail??');
+//     expect('nooo why fail??').to.be.a('string', 'nooo why fail??');
   
-    expect({a: 1, b: 2, c: 3}).to.include({a: 1, b: 2});
-  })
-})
-function test () {
-  expect(arguments).to.be.arguments;
-}
+//     expect({a: 1, b: 2, c: 3}).to.include({a: 1, b: 2});
+//   })
+// })
+// function test () {
+//   expect(arguments).to.be.arguments;
+// }
 
-test("arg");
+// test("arg");
 
 
